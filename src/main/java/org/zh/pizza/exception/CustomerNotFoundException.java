@@ -1,7 +1,7 @@
 package org.zh.pizza.exception;
 
 public class CustomerNotFoundException extends Exception{
-    public CustomerNotFoundException(){
-        super("找不到指定的顾客");
+    public CustomerNotFoundException(String phoneNumber){
+        super(String.format("Cannot find Customer with number %s",phoneNumber));
     }
 }
