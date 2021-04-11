@@ -6,7 +6,7 @@
   Time: 15:01
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
@@ -16,7 +16,7 @@
 <h2>Pizza Status</h2>
 <c:forEach var="pizza" items="${order.pizzas}">
 ${pizza.size}:
-    <c:forEach items="${pizza.toppings}" var="topping">${topping.name}</c:forEach>
+    <c:forEach items="${pizza.toppings}" var="topping">${topping}</c:forEach>
     <br>
 </c:forEach>
 <a href="${flowExecutionUrl}&_eventId=createPizza">Create Pizza</a>

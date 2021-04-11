@@ -6,14 +6,14 @@
   Time: 14:20
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
     <title>Spizza</title>
 </head>
 <body>
 <h2>Create Pizza</h2>
-<form:form commandName="pizza">
+<form:form modelAttribute="pizza">
     <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}"/>
     <b>Size: </b><br>
     <form:radiobutton path="size" label="Small (12-inch)" value="SMALL"/><br>
