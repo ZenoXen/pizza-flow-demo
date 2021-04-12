@@ -22,7 +22,7 @@
     <form:radiobutton path="size" label="Ginormous (20-inch)" value="GINORMOUS"/><br>
     <br>
     <b>Toppings: </b><br>
-    <form:checkboxes path="toppings" items="${toppingsList}" delimiter="$lt;br/$gt;"/><br><br>
+    <form:checkboxes path="toppings" items="${toppingsList}"/><br><br>
     <input type="submit" class="button" name="_eventId_addPizza" value="Continue"/>
     <input type="submit" class="button" name="_eventId_cancel" value="Cancel"/>
 </form:form>

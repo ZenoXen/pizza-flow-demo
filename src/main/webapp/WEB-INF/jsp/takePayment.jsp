@@ -15,7 +15,7 @@
 <h2>Take Payment</h2>
 <form:form modelAttribute="paymentDetails">
     <form:input path="amount" disabled="true"/>
-    <form:checkboxes path="paymentType" items="${paymentTypeList}" delimiter="$lt;br/$gt;"/><br><br>
+    <form:checkboxes path="paymentType" items="${paymentTypeList}"/><br><br>
     <input type="submit" class="button" name="_eventId_paymentSubmitted" value="Submit"/>
     <input type="submit" class="button" name="_eventId_cancel" value="Cancel"/>
 </form:form>
