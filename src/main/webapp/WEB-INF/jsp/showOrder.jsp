@@ -16,7 +16,7 @@
 <h2>Pizza Status</h2>
 <c:forEach var="pizza" items="${order.pizzas}">
 ${pizza.size}:
-    <c:forEach items="${pizza.toppings}" var="topping">${topping}</c:forEach>
+    <c:forEach items="${pizza.toppings}" var="topping">&&${topping}</c:forEach>
     <br>
 </c:forEach>
 <a href="${flowExecutionUrl}&_eventId=createPizza">Create Pizza</a>
